@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/game_process_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Игровой процесс:"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/game_process_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="при нажатии на квадрат свое состояние меняют сам нажатый квадрат и его соседи слева, справа, сверху и снизу."
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="26dp" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true"
+        android:layout_marginBottom="30dp">
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/game_final_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Финал игры:"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/game_final_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="игра заканчивается, если все квадраты игрового поля принимают одинаковое состояние."
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="26dp" />
+
+</LinearLayout>
